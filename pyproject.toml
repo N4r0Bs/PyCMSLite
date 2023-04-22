@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycmslite"
+description = "PyCMSLite is a lightweight and user-friendly Python-based Content Management System."
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["app"]
